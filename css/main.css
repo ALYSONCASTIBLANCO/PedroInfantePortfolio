@@ -1,0 +1,238 @@
+/*Header Styles*/
+*{
+    margin: 0;
+}
+body{
+    background: #F5F7F3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #DB9B69;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #F5F7F3;
+    font-size: xx-large;
+}
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Home styles*/
+.home-main{
+    display: flex;
+}
+.home-main div{
+    width: 50%;
+}
+.pedro-image{
+    height: calc(100vh - 83px);
+    background-image: url(../assets/img/pedroinfante-removebg-preview.png);
+    background-size: cover;
+}
+/*Font for Title*/
+.pinyon-script-bold {
+  font-family: "Pinyon Script", cursive;
+  font-weight: bold;
+  font-style: normal;
+}
+.text-and-icons{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-pedro h1{
+    font-size: 100px;
+}
+.home-icons{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+}
+h2{
+    font-weight: lighter;
+}
+.home-icons div i{
+    font-size: 56px;
+}
+/*About styles*/
+.about-main{
+    width: 100%;
+    min-height: calc(100vh - 83px);
+    background-image: url(../assets/img/4018692.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.about-title h1{
+    color: #F5F7F3;
+    font-size: 90px;
+    padding: 100px 10px;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about-content div{
+    width: 40%;
+    max-height: 250px;
+    border-radius: 16px;
+}
+.about-content-text{
+    background-color: rgb(222, 225, 230, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+.about-content-text div{
+    width: 100%;
+}
+.primary-button{
+    cursor: pointer;
+  padding: 0 20px; 
+  line-height: 28px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+  background: #DB9B69FF; 
+  opacity: 1; 
+  border: none; 
+  border-radius: 6px; /* border-m */
+}
+/* Hover */
+.primary-button:hover {
+  color: #FFFFFFFF; /* white */
+  background: #DB9B69FF; 
+}
+/* Pressed */
+.primary-button:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #DB9B69FF; 
+}
+/* Disabled */
+.primary-button:disabled {
+  opacity: 0.4; 
+}
+/* Button 1 */
+.secondary-button {
+    cursor: pointer;
+  line-height: 28px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+  background: #D0BCA3FF; 
+  opacity: 1; 
+  border: none; 
+  border-radius: 6px; /* border-m */
+}
+/* Hover */
+.secondary-button:hover {
+  color: #FFFFFFFF; /* white */
+  background: #D0BCA3FF; 
+}
+/* Pressed */
+.secondary-button:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #D0BCA3FF; 
+}
+/* Disabled */
+.secondary-button:disabled {
+  opacity: 0.4; 
+}
+/*Contact styles*/
+.contact-main{
+    background-image: url(../assets/img/Designer.png);
+    background-size: cover;
+    width: 100%;
+    min-height: calc(100vh - 83px);
+}
+.contact-main div{
+    width: 50%;
+}
+.contact-main div h1{
+    color: #F5F7F3;
+    font-size: 70px;
+    padding: 10px;
+}
+/*Footer styles*/
+footer{
+    background-color: #DB9B69;
+}
+
+/*My Career styles*/
+.career-main h1, .skills-main h1{
+    font-size: 60px;
+    text-align: center;
+}
+.song-container {
+    display: flex;
+    align-items: center;
+    background-color: #D0BCA3;
+    padding: 10px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+  }
+  .item2 { 
+    /* flex:1 1 auto; */
+    flex-grow:1;
+  }
+  .song-container div i{
+    font-size: 56px;
+    color: #F5F7F3;
+    padding-right: 10px;
+}
+.watch-more{
+    width: 100%;
+    cursor: pointer;
+  padding: 0 20px; 
+  line-height: 28px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+  background: #DB9B69FF; 
+  opacity: 1; 
+  border: none; 
+  border-radius: 6px; /* border-m */
+  margin-bottom: 10px;
+}
+/* Hover */
+.watch-more:hover {
+  color: #FFFFFFFF; /* white */
+  background: #DB9B69FF; 
+}
+/* Pressed */
+.watch-more:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #DB9B69FF; 
+}
+/* Disabled */
+.watch-more:disabled {
+  opacity: 0.4; 
+}
+/*My Skills styles*/
+#awards{
+    overflow: hidden;
+}
+#awards h2{
+    font-size: 40px;
+    text-align: center;
+}
+.slider{
+    width: 300%;
+    display: flex;
+}
+.slide{
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.img1{
+    background-image: url(../assets/img/ariel-awards-696x392.png);
+}
+.img2{
+    background-image: url(../assets/img/silver_bear.webp);
+}
+.img3{
+    background-image: url(../assets/img/Golden-Globes.webp);
+}
