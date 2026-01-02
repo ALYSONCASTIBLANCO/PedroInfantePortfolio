@@ -6,6 +6,9 @@ body{
     background: #F5F7F3;
     font-family: Arial, Helvetica, sans-serif;
 }
+a{
+  text-decoration: none;
+}
 header{
     background-color: #DB9B69;
     display: flex;
@@ -14,10 +17,20 @@ header{
     color: #F5F7F3;
     font-size: xx-large;
 }
+header a{
+    color: #F5F7F3;
+    font-size: xx-large;
+}
 .pinyon-script-regular {
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
   font-style: normal;
+}
+.pinyon-script-regular-subtitles {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
 }
 /*Home styles*/
 .home-main{
@@ -25,6 +38,9 @@ header{
 }
 .home-main div{
     width: 50%;
+}
+.home-icons div a{
+  color: black;
 }
 .pedro-image{
     height: calc(100vh - 83px);
@@ -155,11 +171,109 @@ h2{
     font-size: 70px;
     padding: 10px;
 }
+.contact_form{
+  background: #F5F7F3;
+  max-width: 40.625rem;
+  margin-left:20px;
+  padding: 2.25rem;
+  width: 90%;
+  border-radius: 16px;
+}
+.input-group{
+  width: 100% !important;
+  position:relative;
+  margin-bottom: 2rem;
+}
+.input-group input[type="text"], .input-group input[type="email"],
+.input-group textarea{
+  font-size: 1rem;
+  color: black;
+  width: 100% !important;
+  outline: none;
+  padding: 0.9375rem 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(219, 155, 105, 0.25);
+  vertical-align: top;
+}
+.input-group input[type="text"]:focus, .input-group input[type="email"]:focus,
+.input-group textarea:focus{
+  border-bottom: 1px solid rgb(219, 155, 105, 1);
+}
+.input-group textarea{
+  max-width: 100%;
+  max-height: 10.25rem;
+  min-height: 5.125rem;
+  min-width: 100%
+}
+.label{
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-left: 1rem;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;;
+  transition: all .3s ease;
+}
+.label:active{
+  top: -12px;
+  margin-left: 0;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: gray;
+}
+.error{
+  position: absolute;
+  color: rgb(255, 59, 59);
+  font-size: 0.875rem;
+}
+.contact_form input[type="submit"]{
+  background: #DB9B69;
+  color: whitesmoke;
+  border-radius: 1px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3.25rem;
+  padding: 0.9375rem;
+  width: 20%;
+  outline: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.contact_form input[type="submit"]:hover{
+  background: #D0BCA3;
+}
 /*Footer styles*/
 footer{
     background-color: #DB9B69;
+    margin-top: 2.25rem;
+    padding: 20px 0;
+    text-align: center;
+    color: whitesmoke;
 }
-
+.bottom-social-media{
+  margin-bottom: 2.25rem;
+  display: flex;
+  justify-content: center;
+}
+.bottom-social-media div{
+  width: 50%;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.bottom-social-media a{
+  text-decoration: none;
+  padding: 0 0.5625rem;
+  color: whitesmoke;
+}
+.bottom-social-media div:hover{
+  transform: scale(2);
+}
 /*My Career styles*/
 .career-main h1, .skills-main h1{
     font-size: 60px;
@@ -213,7 +327,7 @@ footer{
 #awards{
     overflow: hidden;
 }
-#awards h2{
+#awards h2, #gallery h2{
     font-size: 40px;
     text-align: center;
 }
@@ -235,4 +349,39 @@ footer{
 }
 .img3{
     background-image: url(../assets/img/Golden-Globes.webp);
+}
+.singer-section{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-bottom: 20px;
+}
+.singer-section div{
+  width: 50%;
+  min-height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.singer-section div p{
+  font-size: 20px;
+  text-align: justify;
+}
+.singer-section div img{
+  width: 50%;
+  height: 100%;
+  border-radius: 50%;
+}
+.pedro-singer{
+  text-align: center;
+}
+.pedro-gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.pedro-gallery div, .pedro-gallery div img{
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
 }
