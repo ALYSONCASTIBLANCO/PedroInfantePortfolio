@@ -21,6 +21,32 @@ header a{
     color: #F5F7F3;
     font-size: xx-large;
 }
+.hamburguer{
+  cursor: pointer;
+}
+.slide-menu{
+  position: fixed;
+  top: 82px;
+  right: -80%;
+  background: #DB9B69;
+  text-align: right;
+  padding: 1.25rem 2.25rem;
+  width: 30%;
+  min-height: calc(100vh - 83px);
+  z-index: 2;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.slide-menu:active{
+  right: 0;
+}
+.main-menu a, .social-media a{
+  display: block;
+  font-size: 26px;
+  padding: 40px 0 40px 20;
+  border-top: 1px solid #D0BCA3;
+}
 .pinyon-script-regular {
   font-family: "Pinyon Script", cursive;
   font-weight: 400;
@@ -384,4 +410,120 @@ footer{
   border-radius: 16px;
   width: 100%;
   height: 100%;
+}
+
+/*Media queries:*/
+@media(max-width: 1114px){
+  .pedro-image{
+    background-position: center center;
+  }
+}
+@media (max-width: 992px){
+  /*Skills section styles*/
+  .singer-section, .actor-section{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .singer-section div, .actor-section div{
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+  .singer-section{
+    background: linear-gradient(rgb(245, 247, 243, 0.7),
+    rgb(245, 247, 243, 0.7)), url(../assets/img/download.jpeg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .actor-section-bg{
+    background: linear-gradient(rgb(245, 247, 243, 0.7),
+    rgb(245, 247, 243, 0.7)), url(../assets/img/pedro-infante-peliculas-2.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .pedro-singer{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /*Home styles*/
+  .home-main{
+    flex-direction: column;
+  }
+  .home-main div{
+    width: 100%;
+  }
+  .pedro-image{
+    background-position: center center;
+  }
+  .home-icons{
+    bottom: -100px;
+    text-align: center;
+  }
+  .text-pedro h1{
+    text-align: center;
+  }
+  /*About me styles*/
+  .about-content{
+    flex-direction: column;
+  }
+  .about-content div{
+    width: 100%;
+  }
+  .about-content-text{
+    padding:20px 0 20px 0;
+  }
+
+  /*Skills styles*/
+  .pedro-gallery{
+    display: flex;
+    flex-direction: column;
+  }
+  /*Media query for contact button*/
+  @media (max-width: 740px){
+    .contact_form input[type="submit"]{
+      width: 50%;
+    }
+  }
+  /*Media query for contact section in mobile*/
+  @media (max-width: 440px){
+    .empty{
+      display: none;
+    }
+    .contact-main{
+      margin-left: 0;
+    }
+    .contact-main div, .contact_form{
+      margin-left: 5px;
+      width: 88%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+/*Image Modal in Skills Page Styles*/
+.image_modal{
+  width: 90%;
+  max-width: 1000px;
+  /*Center the image*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+/*All i "brother tags" that appear inside of .image_modal*/
+.image_modal+i{
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  color:#D0BCA3;
+  font-size: 2.25rem;
+  display: inline-block;
+  padding: 0.75rem 0.875rem;
+  cursor: pointer;
 }
