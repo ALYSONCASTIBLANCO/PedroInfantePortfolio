@@ -1,3 +1,6 @@
+//To protect the code: any other code won't affect the current one.
+(function(){
+    
 /*Object with properties.*/
 let propLightbox={
     //Container that is containing the image.
@@ -74,3 +77,4 @@ let metLightbox={
     }
 }
 metLightbox.start();
+}())

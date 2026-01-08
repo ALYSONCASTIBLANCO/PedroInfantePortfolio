@@ -38,7 +38,7 @@ header a{
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
-.slide-menu:active{
+.slide-menu.active{
   right: 0;
 }
 .main-menu a, .social-media a{
