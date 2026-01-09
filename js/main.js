@@ -35,7 +35,10 @@ let propMenu={
     },
 
     removeMenu: function () {
-      propMenu.slide_menu.classList.remove('active');
+    // If click occurs inside of header, don' do anything.
+    if (header.contains(e.target)) return;
+
+    propMenu.slide_menu.classList.remove('active');
     },
     setActiveMenuLink: function(){
       //Here I obtain the current page to set the active
