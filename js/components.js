@@ -13,5 +13,5 @@ async function loadComponent(id, path, callback) {
 }
 
 // Load Components
-loadComponent('header', 'components/header.html', initHeader);
-loadComponent('footer', 'components/footer.html');
+loadComponent('header', './components/header.html', initHeader);
+loadComponent('footer', './components/footer.html');
