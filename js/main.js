@@ -17,7 +17,6 @@ let propMenu={
   let metMenu = {
     start: function () {
       propMenu.burger_menu.addEventListener('click', metMenu.toggleMenu);
-      propMenu.slide_menu.addEventListener('click', metMenu.stopClick);
       document.addEventListener('click', metMenu.removeMenu);
       propMenu.firstOption.className='active';
       metMenu.setActiveMenuLink();
@@ -30,14 +29,13 @@ let propMenu={
       propMenu.slide_menu.classList.toggle('active');
     },
 
-    stopClick: function (e) {
-      e.stopPropagation(); // Clicks inside the menu don't close it.
-    },
-
-    removeMenu: function () {
-    // If click occurs inside of header, don' do anything.
-    if (header.contains(e.target)) return;
-
+    removeMenu: function (e) {
+    // If click occurs inside of header or related elements like the slide menu, don't do anything.
+    if (
+      e.target.closest('#slide-menu') ||
+      e.target.closest('#burger-menu')
+    ) return;
+    //Otherwise, remove the menu.
     propMenu.slide_menu.classList.remove('active');
     },
     setActiveMenuLink: function(){
