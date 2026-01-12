@@ -1,170 +1,157 @@
-Pedro Infante – Frontend Portfolio (Vanilla JS)
-📌 Overview
+# Pedro Infante – Frontend Portfolio (Vanilla JS)
 
-This project is a pedagogical and fast frontend portfolio sample built using a pure frontend stack: HTML, CSS, and Vanilla JavaScript.
-It focuses on clean architecture, responsive design, microinteractions, and UX-driven behavior, avoiding frameworks to explore the fundamentals behind modern frontend technologies.
+## 📌 Overview
 
-The project is designed to be both production-like and educational, serving as a reusable base for future projects and as a learning resource for junior developers and students.
+This project is a **pedagogical and fast frontend portfolio sample** built using a pure frontend stack: **HTML, CSS, and Vanilla JavaScript**.  
+It focuses on **clean architecture, responsive design, microinteractions, and UX-driven behavior**, avoiding frameworks to explore the fundamentals behind modern frontend technologies.
 
-🎯 Objectives
+The project is designed to be both **production-like** and **educational**, serving as a reusable base for future projects and as a learning resource for junior developers and students.
 
-Build a modern, responsive portfolio using only core frontend technologies
+---
 
-Practice DOM manipulation, event handling, and state management without abstractions
+## 🎯 Objectives
 
-Implement microinteractions and animations to enhance UX
+- Build a modern, responsive portfolio using only **core frontend technologies**
+- Practice **DOM manipulation, event handling, and state management** without abstractions
+- Implement **microinteractions and animations** to enhance UX
+- Create a **realistic portfolio structure** suitable for job applications
+- Serve as a **pedagogical reference** for frontend students
 
-Create a realistic portfolio structure suitable for job applications
+---
 
-Serve as a pedagogical reference for frontend students
+## 👥 Target Audience
 
-👥 Target Audience
+- **Recruiters** reviewing frontend fundamentals
+- **Junior Frontend Developers** strengthening core skills
+- **12th grade students** using this project as a learning base
+- **Myself**, as a reusable component library and technical reference
 
-Recruiters reviewing frontend fundamentals
+---
 
-Junior Frontend Developers looking to strengthen core skills
+## 🛠️ Tech Stack
 
-12th grade students using this project as a learning base
+- **HTML5**
+- **CSS3** (advanced selectors, transitions, animations, responsive design)
+- **Vanilla JavaScript (ES6+)**
 
-Myself, as a reusable component library and technical reference
-
-🛠️ Tech Stack
-
-HTML5
-
-CSS3 (advanced selectors, transitions, animations, responsive design)
-
-Vanilla JavaScript (ES6+)
-
-Why no frameworks?
+### Why no frameworks?
 
 This project intentionally avoids frameworks like React or Vue in order to:
+- Understand the **roots of modern frontend frameworks**
+- Reduce abstraction and focus on **core concepts**
+- Keep the codebase **simple, readable, and pedagogical**
+- Provide a solid base for students before introducing complex tooling
 
-Understand the roots of modern frontend frameworks
+> Simple is better — especially when learning.
 
-Reduce abstraction and focus on core concepts
+---
 
-Keep the codebase simple, readable, and pedagogical
+## 🧠 Core Concepts Practiced
 
-Provide a solid base for students before introducing complex tooling
+- DOM manipulation
+- Event bubbling and event delegation
+- UI state handling without frameworks
+- Responsive navigation logic
+- UX-driven interactions
+- Transitions and animations
+- Portfolio-oriented layout and structure
+- UX/UI implementation from a previous mockup
+- Advanced CSS with multiple selectors
 
-Simple is better — especially when learning.
+---
 
-🧠 Core Concepts Practiced
+## 🧩 JavaScript Architecture
 
-DOM manipulation
+The JavaScript is organized in **separated files**, each responsible for a specific functionality, such as:
 
-Event bubbling and event delegation
-
-UI state handling without frameworks
-
-Responsive navigation logic
-
-UX-driven interactions
-
-Transitions and animations
-
-Portfolio-oriented layout and structure
-
-UX/UI implementation from a previous mockup
-
-Advanced CSS with multiple selectors
-
-🧩 JavaScript Architecture
-
-The JavaScript is organized in separated files, each responsible for a specific functionality, such as:
-
-Component injection
-
-Header and navigation logic
-
-Form validation
-
-Material-style interactions
-
-Lightbox effects
-
-Dynamic sliders
-
-Page transitions
-
-Parallax effects
+- Component injection
+- Header and navigation logic
+- Form validation
+- Material-style interactions
+- Lightbox effects
+- Dynamic sliders
+- Page transitions
+- Parallax effects
 
 This modular structure allows:
+- Easy maintenance and scalability
+- Clear separation of concerns
+- Reusability of components in future projects
 
-Easy maintenance and scalability
+Although no framework is used, the structure follows **component-based principles inspired by React**, implemented manually to better understand how these patterns work under the hood.
 
-Clear separation of concerns
+---
 
-Reusability of components in future projects
+## 🍔 Header & Navigation Logic
 
-Although no framework is used, the structure follows component-based principles inspired by React, implemented manually to better understand how these patterns work under the hood.
-
-🍔 Header & Navigation Logic
-
-The header behavior is handled by a dedicated initHeader function, fully encapsulated and independent from other DOM sections.
+The header behavior is handled by a dedicated `initHeader` function, fully encapsulated and independent from other DOM sections.
 
 Key concepts applied:
-
-addEventListener for controlled interactions
-
-stopPropagation() to manage event bubbling
-
-closest() to detect clicks outside the menu
-
-classList.toggle() for simplified state transitions
-
-Active link detection based on the current URL
+- `addEventListener` for controlled interactions
+- `stopPropagation()` to manage event bubbling
+- `closest()` to detect clicks outside the menu
+- `classList.toggle()` for simplified state transitions
+- Active link detection based on the current URL
 
 This approach ensures:
+- Clean UX behavior
+- Predictable menu state
+- No unwanted DOM side effects
 
-Clean UX behavior
+---
 
-Predictable menu state
+## ✨ UX & Microinteractions
 
-No unwanted DOM side effects
+- Fully responsive design with multiple media queries
+- Smooth page transitions using `requestAnimationFrame()`
+- Persistent header across dynamic page transitions
+- Button and container micro-animations for immediate feedback
+- Discography section animations inspired by music records for thematic coherence
 
-✨ UX & Microinteractions
+Each interaction is designed to **reduce friction**, **guide the user**, and **improve navigation clarity**.
 
-Fully responsive design with multiple media queries
+---
 
-Smooth page transitions using requestAnimationFrame()
+## 📸 Preview
 
-Persistent header across dynamic page transitions
+### Desktop
+![Desktop preview](./assets/img/previews/desktop.png)
 
-Button and container micro-animations for immediate feedback
+### Mobile
+![Mobile preview](./assets/img/previews/mobile.png)
 
-Discography section animations inspired by music records for thematic coherence
+### Menu Interaction
+![Menu preview](./assets/img/previews/menu.png)
 
-Each interaction is designed to reduce friction, guide the user, and improve navigation clarity.
+---
 
-🚀 Live Demo
+## 🚀 Live Demo
 
-The project is deployed using GitHub Pages:
+The project is deployed using **GitHub Pages**:
 
-👉 Live Demo:
+👉 **Live Demo:**  
 https://alysoncastiblanco.github.io/PedroInfantePortfolio/
 
 No installation is required.
 
-📂 How to Explore the Project
+---
 
-Students:
-Start with the HTML and CSS files, then move to the JavaScript files.
-Read all comments — every element exists for a reason.
+## 📂 How to Explore the Project
 
-Recruiters / Developers:
-Focus on:
+- **Students:**  
+  Start with the HTML and CSS files, then move to the JavaScript files.  
+  **Read all comments** — every element exists for a reason.
 
-Header navigation logic
+- **Recruiters / Developers:**  
+  Focus on:
+  - Header navigation logic
+  - JavaScript structure
+  - Event handling patterns
+  - UX-driven decisions
 
-JavaScript structure
+---
 
-Event handling patterns
+## 📖 Final Notes
 
-UX-driven decisions
-
-📖 Final Notes
-
-This project is not meant to replace modern frameworks, but to strengthen the foundations required to use them properly.
+This project is not meant to replace modern frameworks, but to **strengthen the foundations** required to use them properly.  
 Understanding how things work without abstractions makes you a better frontend developer.
